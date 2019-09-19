@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Expenses>
+<Expense>
+<UserID>1</UserID>
+<Value>100</Value>
+<Data>20190909</Data>
+<Expense>Restauracja</Expense>
+<Tag>Rozrywka</Tag>
+</Expense>
+</Expenses>
