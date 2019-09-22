@@ -12,7 +12,7 @@ Expense ExpensesManager :: returnSingleExpense(){
 
     expense.setValue (100);
     expense.setDate (20190909);
-    expense.setIdLoggedUser (1);
+    expense.setIdLoggedUser (ID_LOGGED_USER);
     expense.setExpense ("Restauracja");
     expense.setTag ("Rozrywka");
 

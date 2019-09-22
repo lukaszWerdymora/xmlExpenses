@@ -61,7 +61,7 @@ vector <User> FileManager :: loadAllUsersFromFileToVector ()
 {
 
     vector <User> users;
-    //loadUserFromFile( xml);
+
     xml.Load(NAME_FILE);
     xml.ResetPos();
 
@@ -74,9 +74,6 @@ vector <User> FileManager :: loadAllUsersFromFileToVector ()
         xml.IntoElem();
         users.push_back(loadUserFromFile());
         xml.OutOfElem();
-        //xml.FindElem("User");
-        //xml.IntoElem();
-
     }
 
     return users;

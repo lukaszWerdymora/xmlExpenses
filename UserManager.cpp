@@ -10,13 +10,20 @@ void UserManager :: registerUser()
 User UserManager :: getDataNewUser ()
 {
     User user;
-
-    cout<<"Podaj dane uzytkownika do rejestracji: \n";
+    string login, name, surname, password;
+    cout<<"Podaj dane uzytkownika do rejestracji: \nLogin: ";
+    cin>>login;
+    cout<<"\nImie: ";
+    cin>>name;
+    cout<<"\nNazwisko: ";
+    cin>>surname;
+    cout<<"\nHaslo: ";
+    cin>>password;
     user.setId (returnIdNewUser());
-    user.setLogin("Buli");
-    user.setName ("Marek");
-    user.setSurname ("Falenty");
-    user.setPassword ("5");
+    user.setLogin(login);
+    user.setName (name);
+    user.setSurname (surname);
+    user.setPassword (password);
 
     return user;
 }
@@ -92,6 +99,8 @@ int UserManager :: returnIdNewUser(){
 }
 void UserManager :: loggedOut(){
     idLoggedUser=0;
+    cout<<"\nZostales wylogowany";
+    Sleep(1000);
 }
 
 bool UserManager :: ifAnyUserIsLogg(){
@@ -122,4 +131,8 @@ void UserManager :: changingPassword(){
         cout<<"Nie jestes zalogowany";
     }
 
+}
+int UserManager :: getIdLoggedUser(){
+
+    return idLoggedUser;
 }

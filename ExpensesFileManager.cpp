@@ -2,7 +2,7 @@
 
 void ExpensesFileManager :: creatNewForm()
 {
-    bool ifFileExist=xml.Load (NAME_EXPANSES_FILE);
+    bool ifFileExist=xml.Load (NAME_EXPENSES_FILE);
 
     if (!ifFileExist)
     {
@@ -23,20 +23,12 @@ void ExpensesFileManager :: saveNewExpenseToFile (Expense expense)
     xml.AddElem("Expense");
     xml.IntoElem();
     //xml.AddElem("UserID", user.getId());
-    xml.AddElem("UserID", 1);
+    xml.AddElem("UserID", expense.getIdLoggedUser());
     xml.AddElem("Value", expense.getValue());
     xml.AddElem("Data", expense.getDate());
     xml.AddElem("Expense", expense.getExpense());
     xml.AddElem("Tag", expense.getTag());
-    //string document=xml.GetDoc();
-    //cout<<document;
-/*
-    int getValue ();
-    int getDate ();
-    int getIdLoggedUser ();
-    string getExpense ();
-    string getTag ();
-*/
-    xml.Save(NAME_EXPANSES_FILE);
+
+    xml.Save(NAME_EXPENSES_FILE);
 
 }

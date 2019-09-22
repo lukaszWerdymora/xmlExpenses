@@ -4,6 +4,7 @@
 #include "User.h"
 #include "FileManager.h"
 #include <vector>
+#include <windows.h>
 
 using namespace std;
 
@@ -13,13 +14,17 @@ class UserManager {
     int idLoggedUser;
     int returnIdNewUser();
 
+
 public:
     UserManager (string fileNameWithUsers) : fileManager (fileNameWithUsers){
     idLoggedUser=0;
     users=fileManager.loadAllUsersFromFileToVector();
     };
+    ~UserManager(){//dopisales nie wiadomo czy potrzebne
+        //loggedOut();
+    };
     User getDataNewUser();//zmien to pozniej na private
-
+    int getIdLoggedUser();
     void addUserToVector();
     void registerUser();
     void wyswietl ();
@@ -27,6 +32,7 @@ public:
     void loggedOut();
     bool ifAnyUserIsLogg();
     void changingPassword();
+
 
 
 };

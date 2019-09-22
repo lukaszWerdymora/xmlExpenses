@@ -5,7 +5,7 @@
 <Login>Lukasz</Login>
 <Name>Maciej</Name>
 <Surname>Brzoza</Surname>
-<Password>tajne</Password>
+<Password>tajne123</Password>
 </User>
 <User>
 <UserID>2</UserID>
@@ -34,5 +34,12 @@
 <Name>Marek</Name>
 <Surname>Falenty</Surname>
 <Password>5</Password>
+</User>
+<User>
+<UserID>6</UserID>
+<Login>Huj</Login>
+<Name>Leszek</Name>
+<Surname>Miller</Surname>
+<Password>lewica</Password>
 </User>
 </Users>

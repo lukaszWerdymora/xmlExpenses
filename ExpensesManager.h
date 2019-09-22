@@ -1,5 +1,5 @@
 #ifndef EXPENSESMANAGER_H
-#define EXPANSESMANAGER_H
+#define EXPENSESMANAGER_H
 
 #include <iostream>
 #include "Expense.h"
@@ -9,9 +9,10 @@ using namespace std;
 class ExpensesManager {
     ExpensesFileManager expensesFileManager;
     Expense returnSingleExpense();
+    int ID_LOGGED_USER;
 
 public:
-    ExpensesManager (string fileName) : expensesFileManager (fileName){};
+    ExpensesManager (string fileName,int idLoggedUser) : expensesFileManager (fileName),ID_LOGGED_USER (idLoggedUser) {};
 
 
     void addNewExpense();
