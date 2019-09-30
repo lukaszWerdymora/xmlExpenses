@@ -23,6 +23,7 @@ void ExpensesFileManager :: saveNewExpenseToFile (Expense expense)
     xml.AddElem("Expense");
     xml.IntoElem();
     //xml.AddElem("UserID", user.getId());
+    xml.AddElem("ExpenseID", expense.getExpenseID());
     xml.AddElem("UserID", expense.getIdLoggedUser());
     xml.AddElem("Value", expense.getValue());
     xml.AddElem("Data", expense.getDate());

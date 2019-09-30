@@ -24,3 +24,7 @@ int main() {
     return 0;
 }
 
+    // odczyt wydatków z pliku
+    // zapis wydatków do vectora
+    // przejrzyj nazwy metod
+    //zmien User getDataNewUser(); na private
