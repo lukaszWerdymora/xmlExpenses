@@ -21,10 +21,17 @@ int main() {
     expensesControlProgram.loggingUser();
     //expensesControlProgram.changingPassword();
     expensesControlProgram.addNewExpenses();
+    //expensesControlProgram.loadExpensesFromFileToVector();
     return 0;
 }
 
-    // odczyt wydatków z pliku
-    // zapis wydatków do vectora
+    // odczyt wydatków z pliku zrobione
+    // zapis wydatków do vectora zrobione
+
+    // Expense zmien na expenseID zrobione
+    // 20191001 Poprawiles dzialanie programu i co najwazniejsze dodalesmetode pobierani z plku wydatkow tylko zalogowanego uzytkownika
+    // napisz metode na uzyskiwanie expanseID. Napisales ale nie dzila poprawnie, trzeba ja wziac z pliku
+    //napisz dobry plik z wydatkami i zapisz go w oddzielnym katalogu
+    // zmien typ danych amount expenses na double
     // przejrzyj nazwy metod
     //zmien User getDataNewUser(); na private

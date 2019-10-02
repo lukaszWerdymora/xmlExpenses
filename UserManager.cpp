@@ -53,10 +53,10 @@ int UserManager :: loggingUser()
     //User user;
 
 
-    string login="", password="";
+    string login="Lukasz", password="tajne123";
     int step=0;
     cout<<endl<< "Podaj login: ";
-    cin>>login;
+    //cin>>login;
     vector <User>::iterator itr =users.begin();
     while (itr!=users.end())
     {
@@ -65,7 +65,7 @@ int UserManager :: loggingUser()
         {
             for (int numberAttempts =3; numberAttempts>0; numberAttempts--){
                 cout << "Podaj haslo. Pozostalo prob: " << numberAttempts << ": ";
-                cin >> password;
+                //cin >> password;
                 if (itr ->User :: getPassword() == password){
                     cout << endl << "Zalogowales sie." << endl << endl;
                     system("pause");

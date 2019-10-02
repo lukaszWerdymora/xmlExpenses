@@ -27,6 +27,7 @@ public:
     void changingPassword();
     void loggedOutUser();
     void addNewExpenses();
+    void loadExpensesFromFileToVector();
 };
 
 #endif // EXPENSESCONTROLPROGRAM_H

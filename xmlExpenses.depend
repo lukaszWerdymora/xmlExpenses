@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1569868427 source:c:\programlukasz\programy\xmlexpenses\main.cpp
+1570049797 source:c:\programlukasz\programy\xmlexpenses\main.cpp
 	<iostream>
 	"Markup.h"
 	"User.h"
@@ -54,7 +54,7 @@
 1568662531 source:c:\programlukasz\programy\xmlexpenses\user.cpp
 	"User.h"
 
-1569181098 source:c:\programlukasz\programy\xmlexpenses\usermanager.cpp
+1570035645 source:c:\programlukasz\programy\xmlexpenses\usermanager.cpp
 	"UserManager.h"
 
 1568750941 source:c:\programlukasz\programy\xmlexpenses\expenses.cpp
@@ -63,33 +63,35 @@
 1568750344 c:\programlukasz\programy\xmlexpenses\expenses.h
 	<iostream>
 
-1569867023 source:c:\programlukasz\programy\xmlexpenses\expensesfilemanager.cpp
+1570041516 source:c:\programlukasz\programy\xmlexpenses\expensesfilemanager.cpp
 	"ExpensesFileManager.h"
 
-1569867739 source:c:\programlukasz\programy\xmlexpenses\expensesmanager.cpp
+1570049568 source:c:\programlukasz\programy\xmlexpenses\expensesmanager.cpp
 	"ExpensesManager.h"
 
-1569868225 c:\programlukasz\programy\xmlexpenses\expensesmanager.h
+1570049797 c:\programlukasz\programy\xmlexpenses\expensesmanager.h
 	<iostream>
 	<vector>
 	"Expense.h"
 	"ExpensesFileManager.h"
 
-1569866864 source:c:\programlukasz\programy\xmlexpenses\expense.cpp
+1569868894 source:c:\programlukasz\programy\xmlexpenses\expense.cpp
 	"Expense.h"
 
-1569866773 c:\programlukasz\programy\xmlexpenses\expense.h
+1569868894 c:\programlukasz\programy\xmlexpenses\expense.h
 	<iostream>
 
-1569086115 c:\programlukasz\programy\xmlexpenses\expensesfilemanager.h
+1570037600 c:\programlukasz\programy\xmlexpenses\expensesfilemanager.h
 	<iostream>
+	<vector>
 	"Markup.h"
 	"Expense.h"
+	"helpMethods.h"
 
-1569868073 source:c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.cpp
+1569953392 source:c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.cpp
 	"ExpensesControlProgram.h"
 
-1569182293 c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.h
+1569873606 c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.h
 	<iostream>
 	"UserManager.h"
 	"ExpensesManager.h"
