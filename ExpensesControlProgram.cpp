@@ -22,3 +22,7 @@ void ExpensesControlProgram :: addNewExpenses(){
     expensesManager->addNewExpense();
 
 }
+void ExpensesControlProgram :: loadExpensesFromFileToVector(){
+expensesManager-> loadAllExpensesFromFileToVector(userManager.getIdLoggedUser());
+
+}

@@ -1,4 +1,10 @@
 #include "ExpensesManager.h"
+void ExpensesManager :: loadAllExpensesFromFileToVector (int ID_LOGGED_USER){
+    expenses= expensesFileManager.loadAllExpensesLoggedUser(ID_LOGGED_USER);
+    numberOfExpenses=expensesFileManager.getLastExpenseID();
+    //cout<<numberOfExpenses;
+//wyswietl();
+}
 
 void ExpensesManager :: addNewExpense (){
     Expense expense;
@@ -6,47 +12,40 @@ void ExpensesManager :: addNewExpense (){
     expenses.push_back(expense);
     expensesFileManager.saveNewExpenseToFile (expense);
 
-    wyswietl2();
+    wyswietl();
 }
 
 Expense ExpensesManager :: returnSingleExpense(){
 
     Expense expense;
 
-    expense.setExpenseID(1);
-    expense.setIdLoggedUser (ID_LOGGED_USER);
-    expense.setValue (100);
-    expense.setDate (20190909);
+    //cout<<numberOfExpenses<<endl<<endl;
+    expense.setExpenseID(numberOfExpenses+1);
 
-    expense.setExpense ("Restauracja");
-    expense.setTag ("Rozrywka");
+    expense.setIdLoggedUser (ID_LOGGED_USER);
+    expense.setValue (325);
+    expense.setDate (20190913);
+
+    expense.setExpense ("Pralka");
+    expense.setTag ("Sprzet domowy");
 
     return expense;
 
 }
 
+
+
 void ExpensesManager :: wyswietl(){
-
-    for (int i =0; i<expenses.size(); i++){
-
-        cout<<expenses[i].getExpenseID()<<endl;
-        cout<<expenses[i].getIdLoggedUser()<<endl;;
-        cout<<expenses[i].getDate()<<endl;;
-        cout<<expenses[i].getExpense()<<endl;;
-        cout<<expenses[i].getValue()<<endl;;
-        cout<<expenses[i].getTag()<<endl;;
-    }
-}
-void ExpensesManager :: wyswietl2(){
     vector <Expense>:: iterator itr=expenses.begin();
-
+    cout<<endl;
     for (itr; itr!=expenses.end(); itr++){
 
-        cout<<itr->getExpenseID()<<endl;
-        cout<<itr->getIdLoggedUser()<<endl;
-        cout<<itr->getDate()<<endl;
-        cout<<itr->getExpense()<<endl;
-        cout<<itr->getValue()<<endl;
-        cout<<itr->getTag()<<endl;
+        cout<<itr->getExpenseID()<<"\texpensesID"<<endl;
+        cout<<itr->getIdLoggedUser()<<"\tlogged user "<<endl;
+        cout<<itr->getDate()<<"\tdata"<<endl;
+        cout<<itr->getValue()<<"\twartosc"<<endl;
+        cout<<itr->getExpense()<<"\twydatek"<<endl;
+        cout<<itr->getTag()<<"\tznacznik"<<endl;
     }
 }
+
