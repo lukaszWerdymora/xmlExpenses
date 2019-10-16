@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1570049797 source:c:\programlukasz\programy\xmlexpenses\main.cpp
+1571254490 source:c:\programlukasz\programy\xmlexpenses\main.cpp
 	<iostream>
 	"Markup.h"
 	"User.h"
@@ -32,15 +32,16 @@
 	"helpMethods.h"
 	<vector>
 
-1568662531 c:\programlukasz\programy\xmlexpenses\helpmethods.h
+1571255537 c:\programlukasz\programy\xmlexpenses\helpmethods.h
 	<iostream>
 	<sstream>
 	<algorithm>
+	<vector>
 
 1569085962 source:c:\programlukasz\programy\xmlexpenses\filemanager.cpp
 	"FileManager.h"
 
-1568662531 source:c:\programlukasz\programy\xmlexpenses\helpmethods.cpp
+1571253391 source:c:\programlukasz\programy\xmlexpenses\helpmethods.cpp
 	"helpMethods.h"
 
 1568662531 source:c:\programlukasz\programy\xmlexpenses\markup.cpp
@@ -54,7 +55,7 @@
 1568662531 source:c:\programlukasz\programy\xmlexpenses\user.cpp
 	"User.h"
 
-1570035645 source:c:\programlukasz\programy\xmlexpenses\usermanager.cpp
+1571081505 source:c:\programlukasz\programy\xmlexpenses\usermanager.cpp
 	"UserManager.h"
 
 1568750941 source:c:\programlukasz\programy\xmlexpenses\expenses.cpp
@@ -63,35 +64,35 @@
 1568750344 c:\programlukasz\programy\xmlexpenses\expenses.h
 	<iostream>
 
-1570041516 source:c:\programlukasz\programy\xmlexpenses\expensesfilemanager.cpp
+1571168335 source:c:\programlukasz\programy\xmlexpenses\expensesfilemanager.cpp
 	"ExpensesFileManager.h"
 
-1570049568 source:c:\programlukasz\programy\xmlexpenses\expensesmanager.cpp
+1571168882 source:c:\programlukasz\programy\xmlexpenses\expensesmanager.cpp
 	"ExpensesManager.h"
 
-1570049797 c:\programlukasz\programy\xmlexpenses\expensesmanager.h
+1571168839 c:\programlukasz\programy\xmlexpenses\expensesmanager.h
 	<iostream>
 	<vector>
 	"Expense.h"
 	"ExpensesFileManager.h"
 
-1569868894 source:c:\programlukasz\programy\xmlexpenses\expense.cpp
+1571168415 source:c:\programlukasz\programy\xmlexpenses\expense.cpp
 	"Expense.h"
 
-1569868894 c:\programlukasz\programy\xmlexpenses\expense.h
+1571168415 c:\programlukasz\programy\xmlexpenses\expense.h
 	<iostream>
 
-1570037600 c:\programlukasz\programy\xmlexpenses\expensesfilemanager.h
+1570998452 c:\programlukasz\programy\xmlexpenses\expensesfilemanager.h
 	<iostream>
 	<vector>
 	"Markup.h"
 	"Expense.h"
 	"helpMethods.h"
 
-1569953392 source:c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.cpp
+1571168782 source:c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.cpp
 	"ExpensesControlProgram.h"
 
-1569873606 c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.h
+1571168782 c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.h
 	<iostream>
 	"UserManager.h"
 	"ExpensesManager.h"

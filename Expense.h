@@ -5,24 +5,25 @@
 using namespace std;
 
 class Expense{
-    int value, date, idLoggedUser, expenseID;
+    int date, idLoggedUser, expenseID;
     string expense, tag;
+    double value;
 
 public:
-    void setValue   (int value);
-    void setDate    (int date);
+    void setValue   (double value);
     void setIdLoggedUser (int idLoggedUser);
     void setExpense (string expense);
     void setTag     (string tag);
+    void setDate    (int date);
     void setExpenseID (int expenseID);
 
-    int getValue ();
-    int getDate ();
+    double getValue ();
+
     int getIdLoggedUser ();
     int getExpenseID();
     string getExpense ();
     string getTag ();
-
+    int getDate ();
 
 };
 #endif // EXPENSES_H

@@ -1,9 +1,7 @@
 #include "ExpensesManager.h"
 void ExpensesManager :: loadAllExpensesFromFileToVector (int ID_LOGGED_USER){
     expenses= expensesFileManager.loadAllExpensesLoggedUser(ID_LOGGED_USER);
-    numberOfExpenses=expensesFileManager.getLastExpenseID();
-    //cout<<numberOfExpenses;
-//wyswietl();
+
 }
 
 void ExpensesManager :: addNewExpense (){
@@ -18,12 +16,11 @@ void ExpensesManager :: addNewExpense (){
 Expense ExpensesManager :: returnSingleExpense(){
 
     Expense expense;
-
-    //cout<<numberOfExpenses<<endl<<endl;
-    expense.setExpenseID(numberOfExpenses+1);
-
+    double temp=23.4;
+    expense.setExpenseID(returnLastIdExpense());
+    //expense.setExpenseID(1);
     expense.setIdLoggedUser (ID_LOGGED_USER);
-    expense.setValue (325);
+    expense.setValue (temp);
     expense.setDate (20190913);
 
     expense.setExpense ("Pralka");
@@ -49,3 +46,23 @@ void ExpensesManager :: wyswietl(){
     }
 }
 
+int ExpensesManager :: returnLastIdExpense(){// tak naprawde to set
+
+
+        return expensesFileManager.getIdLastExpense()+1;
+
+}
+
+void ExpensesManager :: dateWithdash(){
+    vector <Expense>:: iterator itr=expenses.begin();
+    int dataWithDash;
+    for (itr; itr!=expenses.end(); itr++){
+
+
+        dataWithDash=itr->getDate();
+        cout<<dataWithDash<<endl;
+
+
+    }
+
+}

@@ -26,3 +26,11 @@ void ExpensesControlProgram :: loadExpensesFromFileToVector(){
 expensesManager-> loadAllExpensesFromFileToVector(userManager.getIdLoggedUser());
 
 }
+void ExpensesControlProgram :: toPrintExpenses(){
+
+    expensesManager->wyswietl();
+
+}
+void ExpensesControlProgram :: printDateWithDash (){
+    expensesManager->dateWithdash();
+}

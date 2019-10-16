@@ -13,7 +13,7 @@ class ExpensesManager {
     int ID_LOGGED_USER;
     int newExpenseID;
     vector <Expense> expenses;
-    int numberOfExpenses;
+    int returnLastIdExpense();
 
 
 public:
@@ -25,5 +25,7 @@ public:
 
     void addNewExpense();
     void loadAllExpensesFromFileToVector(int ID_LOGGED_USER);
+    void dateWithdash();// zmien na private
+
 };
 #endif // EXPENSESmANAGER_H

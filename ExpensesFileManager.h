@@ -13,12 +13,16 @@ class ExpensesFileManager {
     int lastExpenseID;
     const string NAME_EXPENSES_FILE;
     void creatNewForm();
+    int idLastExpense;
+    bool ifEmptyFile;
+    bool ifFileExist;
 public:
     ExpensesFileManager (string nameExpensesFile) : NAME_EXPENSES_FILE (nameExpensesFile){};
     void saveNewExpenseToFile(Expense expense);
     Expense loadExpanseFromFile();
     vector <Expense> loadAllExpensesLoggedUser(int idLoggedUser);
-    int getLastExpenseID();
+    int getIdLastExpense();
+
 
 };
 

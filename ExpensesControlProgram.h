@@ -28,6 +28,8 @@ public:
     void loggedOutUser();
     void addNewExpenses();
     void loadExpensesFromFileToVector();
+    void toPrintExpenses();
+    void printDateWithDash();
 };
 
 #endif // EXPENSESCONTROLPROGRAM_H
