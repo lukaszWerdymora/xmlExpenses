@@ -5,6 +5,7 @@
 #include <vector>;
 #include "Expense.h"
 #include "ExpensesFileManager.h"
+#include "helpMethods.h"
 using namespace std;
 
 class ExpensesManager {
@@ -21,11 +22,11 @@ public:
         loadAllExpensesFromFileToVector(ID_LOGGED_USER);
     };
 
-    void wyswietl();// zmien nazwe
+    void toPrint();// zmien nazwe
 
     void addNewExpense();
     void loadAllExpensesFromFileToVector(int ID_LOGGED_USER);
-    void dateWithdash();// zmien na private
+
 
 };
 #endif // EXPENSESmANAGER_H

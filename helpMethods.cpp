@@ -20,7 +20,7 @@ double HelpMethods :: conversionStringToDouble (string doubleDigitString)
 {
 
     double doubleDigit;
-    //doubleDigit=atof(doubleDigitString.c_str());
+
     istringstream (doubleDigitString)>>doubleDigit;
     return doubleDigit;
 
@@ -33,53 +33,48 @@ string HelpMethods ::conversionDoubleToString (double doubleDigit)
     return str;
 }
 
-string HelpMethods :: returnDataWithDash (int data){
-    vector <string> dataWithDash;
-    vector <string>::iterator itr=dataWithDash.begin();
-    string strData;
-    strData=conversionIntToString(data);
-    dataWithDash.push_back(strData);
+string HelpMethods :: returnDataWithDash (int intDate){//do wykasowania
 
+    string stringData="";
+    string dataWithDash="";
+    string year="";
+    string month="";
+    string day="";
+    stringData=conversionIntToString(intDate);
 
-    for (itr; itr!=dataWithDash.end(); itr++){
-
-
-            dataWithDash.insert(itr,"-");
-
+    for (int i=0; i<stringData.size(); i++){
+        if (i<4){
+            year+=stringData[i];
+        }
+        if ((i>=4)&& (i<6)){
+            month+=stringData[i];
+        }
+        if (i>=6){
+            day+=stringData[i];
+        }
     }
 
-    return strData;
+    //cout<< year<<endl<<month<<endl<<day;
+    dataWithDash=year+"-"+month+"-"+day;
+    return dataWithDash;
 }
 
+string HelpMethods :: getDateFromSystem(){
+    string date="NULL";
+    int month=0;
+    SYSTEMTIME st;
+    GetSystemTime(&st);
 
-//do wykasowania
-int HelpMethods :: separtaeIntOnDigit (int number)
-{
-    int digit;
-    int *reversData=new int [8];
-    //reversData
-    int tab [8];
-    int i=0;
-    while (number>0)
-    {
-        tab[i]=number%10;
-        number/=10;
-        i++;
-    }
-    i=0;
+    date=conversionIntToString(st.wYear)+"-";
 
-    for (int j=7; j>=0; j--)
-    {
+    if (st.wMonth<10) {
 
-        reversData[i]=tab[j];
-        i++;
-    }
+        date+="0"+conversionIntToString(st.wMonth)+"-";
+    }else {date+=conversionIntToString(st.wMonth)+"-";}
 
-    for(int i=0; i<8; i++)
-    {
-        cout<< reversData[i];
-    }
+    if (st.wDay<10){
 
-//    return reversData;
-//    delete reversData[];
+        date+="0"+conversionIntToString(st.wDay);
+    }else date+=conversionIntToString(st.wDay);
+    return date;
 }

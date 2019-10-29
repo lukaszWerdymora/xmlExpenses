@@ -72,8 +72,9 @@ Expense ExpensesFileManager :: loadExpanseFromFile()
     {
         string tempDate="";
         tempDate=xml.GetData();
-        expense.setDate(HelpMethods :: conversionStringToInt (tempDate));
-
+        //expense.setDate(HelpMethods :: conversionStringToInt (tempDate));
+        expense.setDate(xml.GetData());
+        //expense.setDate(tempDate);
     }
 
     if (xml.FindElem("Expense"))

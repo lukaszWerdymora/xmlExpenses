@@ -18,16 +18,14 @@ int main() {
 
 
     ExpensesControlProgram expensesControlProgram ("xmlUser.xml", "xmlExpenses.xml");
-    //expensesControlProgram.loggingUser();
+    expensesControlProgram.loggingUser();
     //expensesControlProgram.changingPassword();
-    //expensesControlProgram.addNewExpenses();
+    expensesControlProgram.addNewExpenses();
     //expensesControlProgram.addNewExpenses();
     //expensesControlProgram.loadExpensesFromFileToVector();
-    //expensesControlProgram.toPrintExpenses();
-    //expensesControlProgram.printDateWithDash();
+    expensesControlProgram.toPrintExpenses();
 
-    //cout<<HelpMethods :: separtaeIntOnDigit (20191015);
-    cout<<HelpMethods :: returnDataWithDash (20191015);
+
 
     return 0;
 }

@@ -53,7 +53,7 @@ int UserManager :: loggingUser()
     //User user;
 
 
-    string login="Lukasz", password="tajne123";
+    string login="Buzz", password="2";
     int step=0;
     cout<<endl<< "Podaj login: ";
     //cin>>login;
