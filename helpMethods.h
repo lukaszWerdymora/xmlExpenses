@@ -15,7 +15,7 @@ class HelpMethods
 int getMonthFromSystem();
 int getDayFromSystem();
 int getYearFromSystem();
-int howManyDaysLeftToEndOfMonth();
+//int howManyDaysLeftToEndOfMonth();
 bool ifLeapYear(int year);
 public:
 
@@ -26,7 +26,9 @@ public:
     static string returnDataWithDash(int intDate);// do wykasowania
     static int howManyDaysLeftToEndOfMonth( int month, int day);
     static string getDateFromSystem();
-
+    static string returnMonthFromDate(string date);
+    static string returnTwoDigitsDate (string date);
+    static bool returnFullNameMonth (string month);
 };
 
 

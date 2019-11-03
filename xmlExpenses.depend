@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1572289162 source:c:\programlukasz\programy\xmlexpenses\main.cpp
+1572782275 source:c:\programlukasz\programy\xmlexpenses\main.cpp
 	<iostream>
 	"Markup.h"
 	"User.h"
@@ -32,7 +32,7 @@
 	"helpMethods.h"
 	<vector>
 
-1572375499 c:\programlukasz\programy\xmlexpenses\helpmethods.h
+1572782495 c:\programlukasz\programy\xmlexpenses\helpmethods.h
 	<iostream>
 	<sstream>
 	<algorithm>
@@ -42,7 +42,7 @@
 1569082362 source:c:\programlukasz\programy\xmlexpenses\filemanager.cpp
 	"FileManager.h"
 
-1572375499 source:c:\programlukasz\programy\xmlexpenses\helpmethods.cpp
+1572782091 source:c:\programlukasz\programy\xmlexpenses\helpmethods.cpp
 	"helpMethods.h"
 
 1568658931 source:c:\programlukasz\programy\xmlexpenses\markup.cpp
@@ -56,7 +56,7 @@
 1568658931 source:c:\programlukasz\programy\xmlexpenses\user.cpp
 	"User.h"
 
-1572294591 source:c:\programlukasz\programy\xmlexpenses\usermanager.cpp
+1572721096 source:c:\programlukasz\programy\xmlexpenses\usermanager.cpp
 	"UserManager.h"
 
 1568750941 source:c:\programlukasz\programy\xmlexpenses\expenses.cpp
@@ -65,13 +65,13 @@
 1568750344 c:\programlukasz\programy\xmlexpenses\expenses.h
 	<iostream>
 
-1572375026 source:c:\programlukasz\programy\xmlexpenses\expensesfilemanager.cpp
+1572721251 source:c:\programlukasz\programy\xmlexpenses\expensesfilemanager.cpp
 	"ExpensesFileManager.h"
 
-1572294432 source:c:\programlukasz\programy\xmlexpenses\expensesmanager.cpp
+1572781210 source:c:\programlukasz\programy\xmlexpenses\expensesmanager.cpp
 	"ExpensesManager.h"
 
-1572375499 c:\programlukasz\programy\xmlexpenses\expensesmanager.h
+1572781203 c:\programlukasz\programy\xmlexpenses\expensesmanager.h
 	<iostream>
 	<vector>
 	"Expense.h"
@@ -91,10 +91,10 @@
 	"Expense.h"
 	"helpMethods.h"
 
-1572375509 source:c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.cpp
+1572540909 source:c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.cpp
 	"ExpensesControlProgram.h"
 
-1572289124 c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.h
+1572540909 c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.h
 	<iostream>
 	"UserManager.h"
 	"ExpensesManager.h"

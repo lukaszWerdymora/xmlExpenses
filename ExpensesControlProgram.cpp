@@ -32,3 +32,9 @@ void ExpensesControlProgram :: toPrintExpenses(){
 
 }
 
+void ExpensesControlProgram :: sumAllExpenses(){
+    expensesManager->sumAllExpenses();
+}
+void ExpensesControlProgram :: monthlyExpenses (){
+    expensesManager->monthlyExpenses();
+}

@@ -53,7 +53,7 @@ int UserManager :: loggingUser()
     //User user;
 
 
-    string login="Buzz", password="2";
+    string login="Lukasz", password="tajne123";
     int step=0;
     cout<<endl<< "Podaj login: ";
     //cin>>login;
@@ -84,6 +84,7 @@ int UserManager :: loggingUser()
 
     cout << "Nie ma uzytkownika z takim loginem" << endl << endl;
     system("pause");
+
 return 0;
 }
 

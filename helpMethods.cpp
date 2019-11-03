@@ -78,3 +78,73 @@ string HelpMethods :: getDateFromSystem(){
     }else date+=conversionIntToString(st.wDay);
     return date;
 }
+
+string HelpMethods :: returnMonthFromDate(string date)
+{
+    string month="";
+    for (int i=0; i<date.size(); i++)
+    {
+        if ((i>4) && (i<7))
+        {
+            month+=date[i];
+        }
+    }
+    return month;
+}
+
+string HelpMethods :: returnTwoDigitsDate (string date){
+
+        if (date.size()==1){
+            return "0"+date;
+        }
+        else return date;
+
+}
+bool HelpMethods :: returnFullNameMonth (string month){
+    int digitMonth=conversionStringToInt(month);
+    bool ifGoodMonth=false;
+
+    switch (digitMonth){
+case 1:
+    cout<<"Styczen";ifGoodMonth=true;
+    break;
+case 2:
+    cout<<"Luty";ifGoodMonth=true;
+    break;
+case 3:
+    cout<<"Marzec";ifGoodMonth=true;
+    break;
+case 4:
+    cout<<"Kwiecien";ifGoodMonth=true;
+    break;
+case 5:
+    cout<<"Maj";ifGoodMonth=true;
+    break;
+case 6:
+    cout<<"Czerwiec";ifGoodMonth=true;
+    break;
+case 7:
+    cout<<"Lipiec";ifGoodMonth=true;
+    break;
+case 8:
+    cout<<"Sierpien";ifGoodMonth=true;
+    break;
+case 9:
+    cout<<"Wrzesien";ifGoodMonth=true;
+    break;
+case 10:
+    cout<<"Pazdziernik";ifGoodMonth=true;
+    break;
+case 11:
+    cout<<"Listopad";ifGoodMonth=true;
+    break;
+case 12:
+    cout<<"Grudzien";ifGoodMonth=true;
+    break;
+default:
+    cout<<"Nie ma takiego miesiaca";ifGoodMonth=false;
+    break;
+
+    }
+
+}

@@ -29,6 +29,8 @@ public:
     void addNewExpenses();
     void loadExpensesFromFileToVector();
     void toPrintExpenses();
+    void sumAllExpenses();
+    void monthlyExpenses();
 
 };
 
