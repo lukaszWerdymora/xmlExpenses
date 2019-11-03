@@ -99,3 +99,97 @@
 	"UserManager.h"
 	"ExpensesManager.h"
 
+1572806958 source:e:\program\xmlexpenses\expense.cpp
+	"Expense.h"
+
+1572802264 e:\program\xmlexpenses\expense.h
+	<iostream>
+
+1572809775 source:e:\program\xmlexpenses\expensescontrolprogram.cpp
+	"ExpensesControlProgram.h"
+
+1572809323 e:\program\xmlexpenses\expensescontrolprogram.h
+	<iostream>
+	"UserManager.h"
+	"ExpensesManager.h"
+
+1572807377 e:\program\xmlexpenses\usermanager.h
+	"User.h"
+	"FileManager.h"
+	<vector>
+	<windows.h>
+
+1572802264 e:\program\xmlexpenses\user.h
+	<iostream>
+
+1572802264 e:\program\xmlexpenses\filemanager.h
+	"User.h"
+	"Markup.h"
+	"helpMethods.h"
+	<vector>
+
+1572802264 e:\program\xmlexpenses\markup.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<afx.h>
+
+1572807461 e:\program\xmlexpenses\helpmethods.h
+	<iostream>
+	<sstream>
+	<algorithm>
+	<vector>
+	<windows.h>
+
+1572803358 e:\program\xmlexpenses\expensesmanager.h
+	<iostream>
+	<vector>
+	"Expense.h"
+	"ExpensesFileManager.h"
+	"helpMethods.h"
+
+1572802264 e:\program\xmlexpenses\expensesfilemanager.h
+	<iostream>
+	<vector>
+	"Markup.h"
+	"Expense.h"
+	"helpMethods.h"
+
+1572802264 source:e:\program\xmlexpenses\expensesfilemanager.cpp
+	"ExpensesFileManager.h"
+
+1572807199 source:e:\program\xmlexpenses\expensesmanager.cpp
+	"ExpensesManager.h"
+
+1572802264 source:e:\program\xmlexpenses\filemanager.cpp
+	"FileManager.h"
+
+1572809815 source:e:\program\xmlexpenses\main.cpp
+	<iostream>
+	"Markup.h"
+	"User.h"
+	"Expense.h"
+	"UserManager.h"
+	"FileManager.h"
+	"ExpensesFileManager.h"
+	"ExpensesManager.h"
+	"helpMethods.h"
+	"ExpensesControlProgram.h"
+
+1572802264 source:e:\program\xmlexpenses\markup.cpp
+	<stdio.h>
+	"Markup.h"
+	<errno.h>
+	<iconv.h>
+	<windows.h>
+	<mbstring.h>
+
+1572802264 source:e:\program\xmlexpenses\user.cpp
+	"User.h"
+
+1572809775 source:e:\program\xmlexpenses\usermanager.cpp
+	"UserManager.h"
+
+1572808392 source:e:\program\xmlexpenses\helpmethods.cpp
+	"helpMethods.h"
+

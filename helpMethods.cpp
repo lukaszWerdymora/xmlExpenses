@@ -100,51 +100,66 @@ string HelpMethods :: returnTwoDigitsDate (string date){
         else return date;
 
 }
-bool HelpMethods :: returnFullNameMonth (string month){
+void HelpMethods :: returnFullNameMonth (string month){
     int digitMonth=conversionStringToInt(month);
-    bool ifGoodMonth=false;
+
 
     switch (digitMonth){
 case 1:
-    cout<<"Styczen";ifGoodMonth=true;
+    cout<<"Styczen";
     break;
 case 2:
-    cout<<"Luty";ifGoodMonth=true;
+    cout<<"Luty";
     break;
 case 3:
-    cout<<"Marzec";ifGoodMonth=true;
+    cout<<"Marzec";
     break;
 case 4:
-    cout<<"Kwiecien";ifGoodMonth=true;
+    cout<<"Kwiecien";
     break;
 case 5:
-    cout<<"Maj";ifGoodMonth=true;
+    cout<<"Maj";
     break;
 case 6:
-    cout<<"Czerwiec";ifGoodMonth=true;
+    cout<<"Czerwiec";
     break;
 case 7:
-    cout<<"Lipiec";ifGoodMonth=true;
+    cout<<"Lipiec";
     break;
 case 8:
-    cout<<"Sierpien";ifGoodMonth=true;
+    cout<<"Sierpien";
     break;
 case 9:
-    cout<<"Wrzesien";ifGoodMonth=true;
+    cout<<"Wrzesien";
     break;
 case 10:
-    cout<<"Pazdziernik";ifGoodMonth=true;
+    cout<<"Pazdziernik";
     break;
 case 11:
-    cout<<"Listopad";ifGoodMonth=true;
+    cout<<"Listopad";
     break;
 case 12:
-    cout<<"Grudzien";ifGoodMonth=true;
-    break;
-default:
-    cout<<"Nie ma takiego miesiaca";ifGoodMonth=false;
+    cout<<"Grudzien";
     break;
 
     }
 
+}
+
+
+char HelpMethods :: returnSingleDigit (){
+    char digit={0};
+    string text="";
+
+    while (true){
+        getline (cin, text);
+        if (text.length()==1){
+            digit=text[0];
+            break;
+        }else{
+            cout<<"To nie jest pojedynczy znak\n";
+        }
+    }
+
+   return digit;
 }

@@ -32,6 +32,7 @@ public:
     void loggedOut();
     bool ifAnyUserIsLogg();
     void changingPassword();
+    char mainMenu ();
 
 
 

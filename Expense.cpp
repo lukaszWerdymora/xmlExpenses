@@ -12,11 +12,7 @@ void Expense :: setExpense (string newExpense){
 void Expense :: setTag (string newTag){
     tag = newTag;
 }
-/*
-void Expense :: setDate (int newDate){
-    date = newDate;
-}
-*/
+
 void Expense :: setDate (string newDate){
     date = newDate;
 }

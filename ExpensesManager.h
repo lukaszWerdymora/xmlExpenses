@@ -15,6 +15,7 @@ class ExpensesManager {
     int newExpenseID;
     vector <Expense> expenses;
     int returnLastIdExpense();
+    bool ifProvidedMonthCorrectly( string month);
 
 public:
     ExpensesManager (string fileName,int idLoggedUser) : expensesFileManager (fileName),ID_LOGGED_USER (idLoggedUser) {

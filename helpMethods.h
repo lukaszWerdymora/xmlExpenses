@@ -28,7 +28,8 @@ public:
     static string getDateFromSystem();
     static string returnMonthFromDate(string date);
     static string returnTwoDigitsDate (string date);
-    static bool returnFullNameMonth (string month);
+    static void returnFullNameMonth (string month);
+    static char returnSingleDigit();
 };
 
 

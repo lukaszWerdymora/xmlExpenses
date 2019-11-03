@@ -81,19 +81,35 @@ void ExpensesManager :: monthlyExpenses ()
     cout<<endl<<"Podaj miesiac za ktory chesz uzyskac wykaz wydatkow: ";
 
     cin>>monthToCalulateExpenses;
-    monthToCalulateExpenses=HelpMethods:: returnTwoDigitsDate (monthToCalulateExpenses);
+
+    if (ifProvidedMonthCorrectly (monthToCalulateExpenses)){
+            monthToCalulateExpenses=HelpMethods:: returnTwoDigitsDate (monthToCalulateExpenses);
     for (itr=expenses.begin(); itr!=expenses.end(); itr++)
     {
-
-
         monthFromVector=HelpMethods :: returnMonthFromDate (itr->getDate());
-        //if (HelpMethods:: returnTwoDigitsDate (monthToCalulateExpenses)== monthFromVector){
         if (monthToCalulateExpenses== monthFromVector){
             monthlyExpenses+=itr->getValue();
         }
     }
 
-    cout<<"\nW misiacu "<<monthToCalulateExpenses<<" wydano "<<monthlyExpenses<< " PLN";
+    cout<<"\nW misiacu ";
+    HelpMethods :: returnFullNameMonth(monthToCalulateExpenses);
+    cout<<" wydano "<<monthlyExpenses<< " PLN";
+    }
+    else {
 
+        cout<<"\nNie ma takiego miesiaca";
+    }
+}
+
+bool ExpensesManager :: ifProvidedMonthCorrectly (string month){
+    int monthToCheck=0;
+    monthToCheck = HelpMethods ::conversionStringToInt( month );
+
+    if ((monthToCheck > 0 )&& (monthToCheck < 13)){
+        return true;
+    }else {
+        return false;
+    }
 }
 

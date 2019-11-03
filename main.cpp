@@ -18,15 +18,15 @@ int main() {
 
 
     ExpensesControlProgram expensesControlProgram ("xmlUser.xml", "xmlExpenses.xml");
-    expensesControlProgram.loggingUser();
+    //expensesControlProgram.loggingUser();
     //expensesControlProgram.changingPassword();
     //expensesControlProgram.addNewExpenses();
     //expensesControlProgram.addNewExpenses();
     //expensesControlProgram.loadExpensesFromFileToVector();
     //expensesControlProgram.toPrintExpenses();
     //expensesControlProgram.monthlyExpenses();
-    HelpMethods :: returnFullNameMonth ("11");
-
+    //HelpMethods :: returnFullNameMonth ("11");
+    expensesControlProgram.mainMenu();
 
 
     return 0;
