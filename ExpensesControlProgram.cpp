@@ -44,16 +44,16 @@ void ExpensesControlProgram :: mainMenu () {
 
     choose=userManager.mainMenu();
     switch (choose) {
-    case 1:
+    case '1':
         userManager.registerUser();
         break;
-    case 2:
+    case '2':
         userManager.loggingUser();
         if (userManager.ifAnyUserIsLogg()) {
             expensesManager =new ExpensesManager (NAME_EXPENSES_FILE, userManager.getIdLoggedUser());
         }
         break;
-    case 9:
+    case '9':
         userManager.loggedOut();
         delete expensesManager;
         expensesManager=NULL;

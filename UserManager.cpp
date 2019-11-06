@@ -64,8 +64,9 @@ int UserManager :: loggingUser()
         if (itr -> User :: getLogin() == login)
         {
             for (int numberAttempts =3; numberAttempts>0; numberAttempts--){
-                cout << "Podaj haslo. Pozostalo prob: " << numberAttempts << ": ";
-                cin >> password;
+                cout << "\nPodaj haslo. Pozostalo prob: " << numberAttempts << ": ";
+                //cin >> password;
+                password=HelpMethods :: returnHiddenPassword();
                 if (itr ->User :: getPassword() == password){
                     cout << endl << "Zalogowales sie." << endl << endl;
                     system("pause");
@@ -73,7 +74,7 @@ int UserManager :: loggingUser()
                     return idLoggedUser;
                 }
             }
-            cout << "Wprowadzono 3 razy bledne haslo." << endl;
+            cout << "\nWprowadzono 3 razy bledne haslo." << endl;
             system("pause");
             return 0;
 
@@ -100,7 +101,7 @@ int UserManager :: returnIdNewUser(){
 }
 void UserManager :: loggedOut(){
     idLoggedUser=0;
-    cout<<"\nZostales wylogowany";
+    cout<<"\nZostales wylogowany\n";
     Sleep(1000);
 }
 

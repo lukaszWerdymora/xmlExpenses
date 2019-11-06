@@ -163,3 +163,50 @@ char HelpMethods :: returnSingleDigit (){
 
    return digit;
 }
+
+string HelpMethods :: returnHiddenPassword (){
+
+    char a;
+    string password="";
+    string temp="";
+    int countStars=0;
+    int passwordLength=0;// zrobiles to do petli while rownie dobrz moze byc =0
+
+    //cout<<"Podaj haslo: ";
+    for (int i=0; (a=getch())!='\r'; i++)
+    {
+
+        if (a==8)
+        {
+
+            passwordLength=password.length()-1;
+            password[passwordLength]=NULL;
+            //password[password.length()-1]=NULL;
+            //passwordLength=password.length()-1;
+            for (int j=0; j<passwordLength; j++)
+            {
+                temp+=password[j];
+            }
+            password=temp;
+            temp="";
+            countStars--;
+        }
+        else
+        {
+
+            countStars++;
+            password+=a;
+        }
+        system ("cls");
+        cout<<"Podaj haslo: ";
+        for (int i=0; i<countStars; i++)
+        {
+            cout<<"*";
+        }
+    }
+
+
+return password;
+
+
+}
