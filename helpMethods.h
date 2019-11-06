@@ -6,6 +6,8 @@
 #include <algorithm>
 #include <vector>
 #include <windows.h>
+#include <conio.h>
+#include <cstdlib>
 
 using namespace std;
 class HelpMethods
@@ -30,6 +32,7 @@ public:
     static string returnTwoDigitsDate (string date);
     static void returnFullNameMonth (string month);
     static char returnSingleDigit();
+    static string returnHiddenPassword ();
 };
 
 

@@ -26,7 +26,7 @@ int main() {
     //expensesControlProgram.toPrintExpenses();
     //expensesControlProgram.monthlyExpenses();
     //HelpMethods :: returnFullNameMonth ("11");
-    expensesControlProgram.mainMenu();
+    //expensesControlProgram.mainMenu();
 
 
     return 0;
