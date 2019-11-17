@@ -100,7 +100,7 @@ vector <Expense> ExpensesFileManager :: loadAllExpensesLoggedUser(int idLoggedUs
     vector <Expense> expenses;
     Expense expense;
 
-    ifFileExist=xml.Load(NAME_EXPENSES_FILE);
+    ifFileExist=xml.Load(NAME_EXPENSES_FILE);// dwa razy wykonuje sie ta sama metoda xml.load sprawdz czy nie da sie jej zastapic creat form
     xml.ResetPos();
 
     xml.FindElem("Expenses");

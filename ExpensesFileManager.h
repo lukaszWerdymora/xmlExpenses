@@ -10,7 +10,7 @@
 using namespace std;
 class ExpensesFileManager {
     CMarkup xml;
-    int lastExpenseID;
+    //int lastExpenseID;
     const string NAME_EXPENSES_FILE;
     void creatNewForm();
     int idLastExpense;
@@ -20,8 +20,8 @@ public:
     ExpensesFileManager (string nameExpensesFile) : NAME_EXPENSES_FILE (nameExpensesFile){};
     void saveNewExpenseToFile(Expense expense);
     Expense loadExpanseFromFile();
-    vector <Expense> loadAllExpensesLoggedUser(int idLoggedUser);
-    int getIdLastExpense();
+    vector <Expense> loadAllExpensesLoggedUser(int idLoggedUser);// i zwraca numer ostatniego rekordu
+    int getIdLastExpense();// pobiera ostatni rekord dzieki loadAllExpensesLoggedUser()
 
 
 };

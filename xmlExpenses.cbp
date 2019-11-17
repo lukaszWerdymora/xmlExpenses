@@ -42,6 +42,12 @@
 		<Unit filename="ExpensesManager.h" />
 		<Unit filename="FileManager.cpp" />
 		<Unit filename="FileManager.h" />
+		<Unit filename="Income.cpp" />
+		<Unit filename="Income.h" />
+		<Unit filename="IncomesFileManager.cpp" />
+		<Unit filename="IncomesFileManager.h" />
+		<Unit filename="IncomesManager.cpp" />
+		<Unit filename="IncomesManager.h" />
 		<Unit filename="Markup.cpp" />
 		<Unit filename="Markup.h" />
 		<Unit filename="User.cpp" />

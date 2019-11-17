@@ -7,4 +7,11 @@
 <Surname>Jaworski</Surname>
 <Password>tajne123</Password>
 </User>
+<User>
+<UserID>2</UserID>
+<Login>jakub</Login>
+<Name>Jakub</Name>
+<Surname>Kubek</Surname>
+<Password>2</Password>
+</User>
 </Users>

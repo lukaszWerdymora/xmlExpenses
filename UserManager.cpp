@@ -151,5 +151,5 @@ char UserManager :: mainMenu (){
     cout << "---------------------------" << endl;
     cout << "Twoj wybor: ";
     wybor = HelpMethods :: returnSingleDigit();
-
+    return wybor;
 }
