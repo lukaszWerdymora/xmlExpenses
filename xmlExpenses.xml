@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Expenses>
+<Expense>
+<ExpenseID>1</ExpenseID>
+<UserID>1</UserID>
+<Value>23</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>2</ExpenseID>
+<UserID>1</UserID>
+<Value>23</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>3</ExpenseID>
+<UserID>1</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>4</ExpenseID>
+<UserID>1</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>5</ExpenseID>
+<UserID>1</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>6</ExpenseID>
+<UserID>1</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>7</ExpenseID>
+<UserID>1</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>8</ExpenseID>
+<UserID>1</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>9</ExpenseID>
+<UserID>2</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>10</ExpenseID>
+<UserID>2</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>11</ExpenseID>
+<UserID>2</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>12</ExpenseID>
+<UserID>2</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>13</ExpenseID>
+<UserID>2</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>14</ExpenseID>
+<UserID>2</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>15</ExpenseID>
+<UserID>2</UserID>
+<Value>23.4</Value>
+<Date>20190913</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>16</ExpenseID>
+<UserID>2</UserID>
+<Value>23.4</Value>
+<Date>2019-10-29</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>17</ExpenseID>
+<UserID>2</UserID>
+<Value>23.4</Value>
+<Date>2019-10-29</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>18</ExpenseID>
+<UserID>2</UserID>
+<Value>45.3</Value>
+<Date>2019-10-29</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>19</ExpenseID>
+<UserID>2</UserID>
+<Value>45.3</Value>
+<Date>2019-10-29</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+<Expense>
+<ExpenseID>20</ExpenseID>
+<UserID>2</UserID>
+<Value>45.3</Value>
+<Date>2019-10-29</Date>
+<Expense>Pralka</Expense>
+<Tag>Sprzet domowy</Tag>
+</Expense>
+</Expenses>

@@ -42,10 +42,26 @@
 </Income>
 <Income>
 <IncomeID>6</IncomeID>
-<UserID>1</UserID>
-<Value>2345.67</Value>
-<Date>2019-11-16</Date>
-<Expense>Wyplata</Expense>
-<Tag>Staly dochod</Tag>
+<UserID>3</UserID>
+<Value>3333</Value>
+<Date>2019-12-03</Date>
+<Expense>wyplata sejm</Expense>
+<Tag>staly dochod</Tag>
+</Income>
+<Income>
+<IncomeID>7</IncomeID>
+<UserID>3</UserID>
+<Value>123</Value>
+<Date>2019-12-03</Date>
+<Expense>kasa za robote na budowie</Expense>
+<Tag>robo</Tag>
+</Income>
+<Income>
+<IncomeID>8</IncomeID>
+<UserID>3</UserID>
+<Value>1e+012</Value>
+<Date>2019-11-11</Date>
+<Expense>harach</Expense>
+<Tag/>
 </Income>
 </Incomes>

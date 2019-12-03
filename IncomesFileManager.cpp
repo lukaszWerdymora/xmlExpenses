@@ -137,7 +137,7 @@ int IncomesFileManager :: getIdLastIncome ()
     }
     else
     {
-        cout<<idLastIncome<<" IncomesFileManager :: getIdLastIncome ()\n";
+
         return idLastIncome;
     }
 

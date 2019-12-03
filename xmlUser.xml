@@ -14,4 +14,11 @@
 <Surname>Kubek</Surname>
 <Password>2</Password>
 </User>
+<User>
+<UserID>3</UserID>
+<Login>1</Login>
+<Name>1</Name>
+<Surname>1</Surname>
+<Password>1</Password>
+</User>
 </Users>

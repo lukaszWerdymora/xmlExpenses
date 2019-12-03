@@ -15,6 +15,7 @@ class ExpensesControlProgram {
     IncomesManager *incomesManager;
     const string NAME_EXPENSES_FILE;
     const string NAME_INCOMES_FILE;
+
 public:
     ExpensesControlProgram (string fileNameWithUsers, string nameExpensesFile, string nameIncomesFile)
     : userManager (fileNameWithUsers), NAME_EXPENSES_FILE (nameExpensesFile), NAME_INCOMES_FILE (nameIncomesFile)
@@ -33,8 +34,10 @@ public:
     void changingPassword();
     void loggedOutUser();
     void addNewExpenses();
+    void addNewIncomes();
     void loadExpensesFromFileToVector();
     void toPrintExpenses();
+    void toPrintIncomes();
     void sumAllExpenses();
     void monthlyExpenses();
     void mainMenu();

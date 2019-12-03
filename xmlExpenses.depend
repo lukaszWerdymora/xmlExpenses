@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1573994471 source:c:\programlukasz\programy\xmlexpenses\main.cpp
+1575320727 source:c:\programlukasz\programy\xmlexpenses\main.cpp
 	<iostream>
 	"Markup.h"
 	"User.h"
@@ -45,7 +45,7 @@
 1569082362 source:c:\programlukasz\programy\xmlexpenses\filemanager.cpp
 	"FileManager.h"
 
-1573070878 source:c:\programlukasz\programy\xmlexpenses\helpmethods.cpp
+1575321075 source:c:\programlukasz\programy\xmlexpenses\helpmethods.cpp
 	"helpMethods.h"
 
 1568658931 source:c:\programlukasz\programy\xmlexpenses\markup.cpp
@@ -59,7 +59,7 @@
 1568658931 source:c:\programlukasz\programy\xmlexpenses\user.cpp
 	"User.h"
 
-1573994510 source:c:\programlukasz\programy\xmlexpenses\usermanager.cpp
+1575321892 source:c:\programlukasz\programy\xmlexpenses\usermanager.cpp
 	"UserManager.h"
 
 1568750941 source:c:\programlukasz\programy\xmlexpenses\expenses.cpp
@@ -71,7 +71,7 @@
 1573847533 source:c:\programlukasz\programy\xmlexpenses\expensesfilemanager.cpp
 	"ExpensesFileManager.h"
 
-1572897947 source:c:\programlukasz\programy\xmlexpenses\expensesmanager.cpp
+1575320727 source:c:\programlukasz\programy\xmlexpenses\expensesmanager.cpp
 	"ExpensesManager.h"
 
 1572897947 c:\programlukasz\programy\xmlexpenses\expensesmanager.h
@@ -94,10 +94,10 @@
 	"Expense.h"
 	"helpMethods.h"
 
-1573995955 source:c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.cpp
+1575404940 source:c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.cpp
 	"ExpensesControlProgram.h"
 
-1573932091 c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.h
+1575398909 c:\programlukasz\programy\xmlexpenses\expensescontrolprogram.h
 	<iostream>
 	"UserManager.h"
 	"ExpensesManager.h"
@@ -200,7 +200,7 @@
 1573070878 source:c:\programlukasz\programy\xmlexpenses\income.cpp
 	"Income.h"
 
-1573926189 source:c:\programlukasz\programy\xmlexpenses\incomesfilemanager.cpp
+1575399020 source:c:\programlukasz\programy\xmlexpenses\incomesfilemanager.cpp
 	"IncomesFileManager.h"
 
 1573070878 c:\programlukasz\programy\xmlexpenses\income.h
@@ -214,7 +214,7 @@
 	"helpMethods.h"
 	"Income.h"
 
-1573928484 source:c:\programlukasz\programy\xmlexpenses\incomesmanager.cpp
+1575400203 source:c:\programlukasz\programy\xmlexpenses\incomesmanager.cpp
 	"IncomesManager.h"
 
 1573932433 c:\programlukasz\programy\xmlexpenses\incomesmanager.h

@@ -73,6 +73,7 @@ int UserManager :: loggingUser()
                     idLoggedUser= itr -> User :: getId();
                     return idLoggedUser;
                 }
+
             }
             cout << "\nWprowadzono 3 razy bledne haslo." << endl;
             system("pause");
@@ -151,5 +152,6 @@ char UserManager :: mainMenu (){
     cout << "---------------------------" << endl;
     cout << "Twoj wybor: ";
     wybor = HelpMethods :: returnSingleDigit();
+
     return wybor;
 }

@@ -29,6 +29,8 @@ int main() {
     //incomesFileManager.laodAllIncomesLoggedUser(1);
     //incomesFileManager.getIdLastIncome();
     //incomesManager.toPrint();
+    //expensesControlProgram.loggingUser();
+    //expensesControlProgram.toPrintExpenses();
 
 
     return 0;

@@ -48,6 +48,7 @@ void ExpensesManager :: toPrint()
         cout<<itr->getExpense()<<endl;
         cout<<itr->getTag()<<endl;
     }
+
 }
 
 int ExpensesManager :: returnLastIdExpense() // tak naprawde to set
