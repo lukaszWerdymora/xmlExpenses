@@ -18,21 +18,10 @@ int main() {
 
 
     ExpensesControlProgram expensesControlProgram ("xmlUser.xml", "xmlExpenses.xml","xmlIncomes.xml" );
-    //IncomesManager incomesManager ("xmlIncomes.xml",1);
-    //IncomesFileManager incomesFileManager ("xmlIncomes.xml");
-
-    //HelpMethods :: returnFullNameMonth ("11");
-    expensesControlProgram.mainMenu();
-    //incomesManager.addNewIncome();
-    //incomesManager.loadAllIncomesFromFilleToVector(1);
-
-    //incomesFileManager.laodAllIncomesLoggedUser(1);
-    //incomesFileManager.getIdLastIncome();
-    //incomesManager.toPrint();
-    //expensesControlProgram.loggingUser();
-    //expensesControlProgram.toPrintExpenses();
 
 
+
+     expensesControlProgram.mainMenu();
     return 0;
 }
 

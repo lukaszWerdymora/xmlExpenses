@@ -13,7 +13,7 @@ class UserManager {
     FileManager fileManager;
     int idLoggedUser;
     int returnIdNewUser();
-
+    User getDataNewUser();
 
 public:
     UserManager (string fileNameWithUsers) : fileManager (fileNameWithUsers){
@@ -23,7 +23,7 @@ public:
     ~UserManager(){//dopisales nie wiadomo czy potrzebne
         //loggedOut();
     };
-    User getDataNewUser();//zmien to pozniej na private
+    //zmien to pozniej na private
     int getIdLoggedUser();
     void addUserToVector();
     void registerUser();

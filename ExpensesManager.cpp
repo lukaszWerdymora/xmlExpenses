@@ -18,14 +18,42 @@ Expense ExpensesManager :: returnSingleExpense()
 {
 
     Expense expense;
-    expense.setExpenseID(returnLastIdExpense());
-
+    double value=0;
+    string ifDataToday="";
+    string date="";
+    string stringExpense="";
+    string stringTag="";
+    expense.setExpenseID(returnLastIdExpense()+1);
     expense.setIdLoggedUser (ID_LOGGED_USER);
-    expense.setValue (10.1);
-    expense.setDate (HelpMethods :: getDateFromSystem());
-    //expense.setDate("2019-07-23");
-    expense.setExpense ("Pralka");
-    expense.setTag ("Sprzet domowy");
+    cout<<"Podaj tytul wydatku\n";
+    getline(cin, stringExpense);
+
+    cout<<"Podaj wartos wydatku\n";
+    cin>>value;
+    cin.ignore();
+    expense.setValue (value);
+
+    cout<< "Czy wydatek z dzisiejszego dnia: t/n -> wpisz odpowiednie ";
+    cin>>ifDataToday;
+    cin.ignore();
+    if (ifDataToday=="t"){
+        expense.setDate (HelpMethods :: getDateFromSystem());
+    }else if (ifDataToday=="n"){
+        do{
+        cout<<"Wpisz date w formacie YYYY-MM-DD\n";
+        cin>>date;
+        cin.ignore();
+
+        expense.setDate(date);
+
+        }while (!HelpMethods :: correctData (date));
+
+    }
+    cout<<"Podaj kategorie\n";
+    getline(cin,stringTag);
+    expense.setTag (stringTag);
+
+    expense.setExpense(stringExpense);
 
     return expense;
 
@@ -54,8 +82,18 @@ void ExpensesManager :: toPrint()
 int ExpensesManager :: returnLastIdExpense() // tak naprawde to set
 {
 
+    int lastIdFromFile=0;
+    int lastIdFromVector=0;
+    if (expenses.size()!=0){
+       lastIdFromVector=expenses.back().getExpenseID();
+    }
+    lastIdFromFile=expensesFileManager.getIdLastExpense();
 
-    return expensesFileManager.getIdLastExpense()+1;
+    if (lastIdFromFile<lastIdFromVector){
+        return lastIdFromVector;
+    }else{
+        return lastIdFromFile;
+    }
 
 }
 
@@ -73,22 +111,30 @@ void ExpensesManager :: sumAllExpenses ()
 }
 
 
-void ExpensesManager :: monthlyExpenses ()
+double ExpensesManager :: monthlyExpenses ()
 {
     string monthToCalulateExpenses="";
     string monthFromVector="";
+    string yearFromVector="";
+    string fullDataFromFile="";
     double monthlyExpenses=0;
     vector <Expense>:: iterator itr;
+    string currentYear="";
+    currentYear=HelpMethods :: getYearFromSystem();
+
     cout<<endl<<"Podaj miesiac za ktory chesz uzyskac wykaz wydatkow: ";
 
     cin>>monthToCalulateExpenses;
 
-    if (ifProvidedMonthCorrectly (monthToCalulateExpenses)){
+    if (HelpMethods :: ifProvidedMonthCorrectly (monthToCalulateExpenses)){
             monthToCalulateExpenses=HelpMethods:: returnTwoDigitsDate (monthToCalulateExpenses);
     for (itr=expenses.begin(); itr!=expenses.end(); itr++)
     {
-        monthFromVector=HelpMethods :: returnMonthFromDate (itr->getDate());
-        if (monthToCalulateExpenses== monthFromVector){
+        fullDataFromFile=itr->getDate();
+        monthFromVector=HelpMethods :: returnMonthFromDate (fullDataFromFile);
+        yearFromVector=HelpMethods :: returnYearFromDate (fullDataFromFile);
+
+        if ((monthToCalulateExpenses== monthFromVector) && (currentYear==yearFromVector)){
             monthlyExpenses+=itr->getValue();
         }
     }
@@ -101,16 +147,44 @@ void ExpensesManager :: monthlyExpenses ()
 
         cout<<"\nNie ma takiego miesiaca";
     }
-}
-
-bool ExpensesManager :: ifProvidedMonthCorrectly (string month){
-    int monthToCheck=0;
-    monthToCheck = HelpMethods ::conversionStringToInt( month );
-
-    if ((monthToCheck > 0 )&& (monthToCheck < 13)){
-        return true;
+    if (monthlyExpenses>=0){
+        return monthlyExpenses;
     }else {
-        return false;
+        cout<<"Wystapil blad podczas liczenia wplywow";
+        return 0;
     }
 }
 
+
+
+/*
+Expense ExpensesManager :: returnSingleExpense()
+{
+
+    Expense expense;
+    expense.setExpenseID(returnLastIdExpense());
+
+    expense.setIdLoggedUser (ID_LOGGED_USER);
+    expense.setValue (10.1);
+    expense.setDate (HelpMethods :: getDateFromSystem());
+    //expense.setDate("2019-07-23");
+    expense.setExpense ("Pralka");
+    expense.setTag ("Sprzet domowy");
+
+    return expense;
+
+}
+
+
+
+int ExpensesManager :: returnLastIdExpense() // tak naprawde to set
+{
+
+
+    return expensesFileManager.getIdLastExpense()+1;
+
+}
+
+
+
+*/

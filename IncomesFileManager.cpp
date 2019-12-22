@@ -132,12 +132,10 @@ int IncomesFileManager :: getIdLastIncome ()
     if (!ifFileExist)
     {
         idLastIncome=0;
-
         return idLastIncome;
     }
     else
     {
-
         return idLastIncome;
     }
 

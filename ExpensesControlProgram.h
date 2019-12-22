@@ -39,8 +39,11 @@ public:
     void toPrintExpenses();
     void toPrintIncomes();
     void sumAllExpenses();
-    void monthlyExpenses();
+    double monthlyExpenses();
     void mainMenu();
+    void sumMonthlyExpenses ();
+    double monthlyIncomes();
+    void balanceInMonth();
 
 };
 

@@ -19,6 +19,7 @@ User UserManager :: getDataNewUser ()
     cin>>surname;
     cout<<"\nHaslo: ";
     cin>>password;
+    cin.ignore();
     user.setId (returnIdNewUser());
     user.setLogin(login);
     user.setName (name);

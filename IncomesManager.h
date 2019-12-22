@@ -25,6 +25,7 @@ public:
     };
     void addNewIncome();
     void loadAllIncomesFromFilleToVector (int ID_LOGGED_USER);
+    double monthlyIncomes ();
     void toPrint();
 
 };

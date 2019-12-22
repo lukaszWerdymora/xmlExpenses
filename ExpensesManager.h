@@ -15,7 +15,7 @@ class ExpensesManager {
     int newExpenseID;
     vector <Expense> expenses;
     int returnLastIdExpense();
-    bool ifProvidedMonthCorrectly( string month);
+
 
 public:
     ExpensesManager (string fileName,int idLoggedUser) : expensesFileManager (fileName),ID_LOGGED_USER (idLoggedUser) {
@@ -27,7 +27,7 @@ public:
     void addNewExpense();
     void loadAllExpensesFromFileToVector(int ID_LOGGED_USER);
     void sumAllExpenses();
-    void monthlyExpenses();
+    double monthlyExpenses();
 
 
 };

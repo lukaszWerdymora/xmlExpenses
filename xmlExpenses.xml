@@ -3,161 +3,73 @@
 <Expense>
 <ExpenseID>1</ExpenseID>
 <UserID>1</UserID>
-<Value>23</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
+<Value>12</Value>
+<Date>2019-12-21</Date>
+<Expense>jedzenie</Expense>
+<Tag>spoz</Tag>
 </Expense>
 <Expense>
 <ExpenseID>2</ExpenseID>
 <UserID>1</UserID>
-<Value>23</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
+<Value>34</Value>
+<Date>2019-12-13</Date>
+<Expense>restaturacja</Expense>
+<Tag>zabawa</Tag>
 </Expense>
 <Expense>
 <ExpenseID>3</ExpenseID>
 <UserID>1</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
+<Value>32</Value>
+<Date>2019-09-09</Date>
+<Expense>gniazdka</Expense>
+<Tag>budowlane</Tag>
 </Expense>
 <Expense>
 <ExpenseID>4</ExpenseID>
-<UserID>1</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
+<UserID>2</UserID>
+<Value>123</Value>
+<Date>2019-02-02</Date>
+<Expense>koszula</Expense>
+<Tag>ubrania</Tag>
 </Expense>
 <Expense>
 <ExpenseID>5</ExpenseID>
-<UserID>1</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
+<UserID>2</UserID>
+<Value>22</Value>
+<Date>2018-09-09</Date>
+<Expense>spozywcze</Expense>
+<Tag>jedzenie</Tag>
 </Expense>
 <Expense>
 <ExpenseID>6</ExpenseID>
-<UserID>1</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
+<UserID>2</UserID>
+<Value>56</Value>
+<Date>2019-09-12</Date>
+<Expense>leki</Expense>
+<Tag>leki</Tag>
 </Expense>
 <Expense>
 <ExpenseID>7</ExpenseID>
-<UserID>1</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
+<UserID>2</UserID>
+<Value>111</Value>
+<Date>2019-10-09</Date>
+<Expense>restauracja</Expense>
+<Tag>zabawa</Tag>
 </Expense>
 <Expense>
 <ExpenseID>8</ExpenseID>
-<UserID>1</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
+<UserID>2</UserID>
+<Value>25</Value>
+<Date>2019-09-23</Date>
+<Expense>jedzenie</Expense>
+<Tag>jedzenie</Tag>
 </Expense>
 <Expense>
 <ExpenseID>9</ExpenseID>
-<UserID>2</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>10</ExpenseID>
-<UserID>2</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>11</ExpenseID>
-<UserID>2</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>12</ExpenseID>
-<UserID>2</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>13</ExpenseID>
-<UserID>2</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>14</ExpenseID>
-<UserID>2</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>15</ExpenseID>
-<UserID>2</UserID>
-<Value>23.4</Value>
-<Date>20190913</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>16</ExpenseID>
-<UserID>2</UserID>
-<Value>23.4</Value>
-<Date>2019-10-29</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>17</ExpenseID>
-<UserID>2</UserID>
-<Value>23.4</Value>
-<Date>2019-10-29</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>18</ExpenseID>
-<UserID>2</UserID>
-<Value>45.3</Value>
-<Date>2019-10-29</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>19</ExpenseID>
-<UserID>2</UserID>
-<Value>45.3</Value>
-<Date>2019-10-29</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
-</Expense>
-<Expense>
-<ExpenseID>20</ExpenseID>
-<UserID>2</UserID>
-<Value>45.3</Value>
-<Date>2019-10-29</Date>
-<Expense>Pralka</Expense>
-<Tag>Sprzet domowy</Tag>
+<UserID>1</UserID>
+<Value>1000</Value>
+<Date>2019-11-11</Date>
+<Expense>wyplata</Expense>
+<Tag>jakis</Tag>
 </Expense>
 </Expenses>

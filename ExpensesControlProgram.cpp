@@ -57,17 +57,38 @@ void ExpensesControlProgram :: sumAllExpenses()
 {
     expensesManager->sumAllExpenses();
 }
-void ExpensesControlProgram :: monthlyExpenses ()
+double ExpensesControlProgram :: monthlyExpenses ()
 {
-    expensesManager->monthlyExpenses();
+    double monthlyExpensesFigure=0;
+    monthlyExpensesFigure=expensesManager->monthlyExpenses();
+    return monthlyExpensesFigure;
 }
+double ExpensesControlProgram :: monthlyIncomes (){
+    double monthlyIncomesFigure=0;
+    monthlyIncomesFigure=incomesManager-> monthlyIncomes();
 
+    return monthlyIncomesFigure;
+}
+void ExpensesControlProgram :: balanceInMonth(){
+    double monthlyIncomesFigure=0;
+    double monthlyExpensesFigure=0;
+    double monthlyBalance=0;
+    monthlyIncomesFigure=incomesManager-> monthlyIncomes();
+    monthlyExpensesFigure=expensesManager->monthlyExpenses();
+
+    monthlyBalance=monthlyIncomesFigure-monthlyExpensesFigure;
+
+    cout<<"\nMiesieczny bilans wynosi "<<monthlyBalance<<endl;
+
+}
 void ExpensesControlProgram :: mainMenu ()
 {
     char choose='0';
     int choiceMinorMenu=0;
     int idLoggedUser=0;
     bool ifLoggedOut=true;
+    double monthlyIncomesFigure=0;
+    double monthlyExpensesFigure=0;
 
     do
     {
@@ -90,7 +111,9 @@ void ExpensesControlProgram :: mainMenu ()
                     cout<<"2. Wyswietl wydatki\n";//dopisz aby od razu sumowalo
                     cout<<"3. Dodaj wplyw\n";
                     cout<<"4. Dodaj wydatki\n";
-                    cout<<"5. Oblicz bilans wplyw - wydatki w danym miesiacu\n";
+                    cout<<"5. Wyswietl wplywy w danym miesiacu bierzacego roku\n";
+                    cout<<"6. Wyswietl wydatki w danym miesiacu bierzacego roku\n";
+                    cout<<"7. Oblicz bilans wplyw - wydatki w danym miesiacu\n";
                     cout<<"0. Wylogowanie i powrot do Menu Glownego\n\n";
 
                     cin>>choiceMinorMenu;
@@ -111,6 +134,16 @@ void ExpensesControlProgram :: mainMenu ()
                         break;
                     case 4:
                         addNewExpenses();
+                        break;
+                    case 5:
+                        monthlyIncomes();
+                        break;
+                    case 6:
+                        monthlyExpenses();
+                    case 7:
+                        balanceInMonth();
+
+                        break;
                     case 9:
                         break;
                     case 0:
@@ -131,9 +164,7 @@ void ExpensesControlProgram :: mainMenu ()
             break;
 
         case '9':
-            //userManager.loggedOut();
-            //delete expensesManager;
-            //expensesManager=NULL;
+
             cout<<"Koniec Programu";
             Sleep(1500);
             exit(0);

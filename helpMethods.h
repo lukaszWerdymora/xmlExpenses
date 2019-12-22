@@ -16,11 +16,13 @@ class HelpMethods
 
 int getMonthFromSystem();
 int getDayFromSystem();
-int getYearFromSystem();
-//int howManyDaysLeftToEndOfMonth();
-bool ifLeapYear(int year);
-public:
 
+
+bool ifLeapYear(int year);
+static bool ifNumber(char number, int numberPosition);
+static bool ifDash(char dash, int dashPosition);
+public:
+    static string getYearFromSystem();
     static int conversionStringToInt (string str);
     static string conversionIntToString (int digit);
     static double conversionStringToDouble (string doubleDigitString);
@@ -29,10 +31,15 @@ public:
     static int howManyDaysLeftToEndOfMonth( int month, int day);
     static string getDateFromSystem();
     static string returnMonthFromDate(string date);
+    static string returnYearFromDate (string date);
     static string returnTwoDigitsDate (string date);
     static void returnFullNameMonth (string month);
     static char returnSingleDigit();
     static string returnHiddenPassword ();
+    static bool correctData (string data);
+    static bool ifProvidedMonthCorrectly (string month);
+
+
 };
 
 
